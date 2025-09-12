@@ -1,2 +1,0 @@
-# ohara_uml
-test
