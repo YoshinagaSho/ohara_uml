@@ -1,0 +1,9 @@
+@startuml RoboDogユースケース図
+left to right direction
+actor "ユーザー" 
+
+ユーザー --> (名前を変更する)
+ユーザー --> (時刻に応じた挨拶の言葉を取得)
+ユーザー --> (足し算をする)
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml RoboDogロバストネス図
+left to right direction
+
+actor ユーザー
+
+boundary メニュー画面
+boundary 名前変更画面
+control 名前変更コントローラ
+entity RoboDog
+
+ユーザー --> メニュー画面
+メニュー画面 --> 名前変更画面 : 名前変更を選択
+名前変更画面 --> 名前変更コントローラ : 新しい名前入力
+名前変更コントローラ --> RoboDog : 名前変更処理
+RoboDog --> 名前変更コントローラ : 変更結果返却
+名前変更コントローラ --> 名前変更画面 : 変更結果表示
+
+@enduml
