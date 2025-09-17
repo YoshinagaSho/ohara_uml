@@ -13,7 +13,6 @@ skinparam componentStyle rectangle
 [ユーザID] o-- [登録・参照]
 [ユーザID] o-- [他の訪問者の情報を参照]
 [ユーザID] o-- [登録情報を変更・削除する]
-
-
+[ユーザID] o-- [ログイン・ログアウト]
 
 @enduml
