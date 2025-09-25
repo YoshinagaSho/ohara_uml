@@ -1,11 +1,17 @@
-from utils import render_template
+from utils import parse_post,render_template
 from app_logic import set_first_value,set_second_value,get_addition
 
 
 def add_numbers(environ):
-    #ここに処理を書く
+    method = environ["REQUEST_METHOD"]
+    if method == "POST":
+        data = parse_post(environ)
+        first_value = data.get("first_value", ["0"])[0]
+        second_value = data.get("second_value", ["0"])[0]
+
     set_first_value(10)
     set_second_value(30)
+
     addition = get_addition()
 
     # additionの結果を渡す
