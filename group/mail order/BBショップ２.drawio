@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="ページ1" id="TN5GZldVQ0bzjK4ATlJ-">
-        <mxGraphModel dx="2734" dy="2205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1986" dy="1936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -106,22 +106,10 @@
                 <mxCell id="Obti_GmHwJAL796aEmRM-37" value="返品依頼がきたら注文管理システムで&lt;br&gt;クレジット会社に" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="520" y="190" width="230" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="Obti_GmHwJAL796aEmRM-38" value="決済サービス" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCE5FF;" parent="1" vertex="1">
-                    <mxGeometry x="620" y="90" width="90" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="Obti_GmHwJAL796aEmRM-39" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.895;exitY=0.04;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Obti_GmHwJAL796aEmRM-11" target="Obti_GmHwJAL796aEmRM-38" edge="1">
+                <mxCell id="Obti_GmHwJAL796aEmRM-39" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.895;exitY=0.04;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Obti_GmHwJAL796aEmRM-11" target="Obti_GmHwJAL796aEmRM-36" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="430" y="150" as="sourcePoint"/>
-                        <mxPoint x="480" y="100" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="Obti_GmHwJAL796aEmRM-40" value="利用するクレジットカード選択" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="420" y="110" width="190" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="Obti_GmHwJAL796aEmRM-41" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Obti_GmHwJAL796aEmRM-38" target="Obti_GmHwJAL796aEmRM-36" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="740" y="177" as="sourcePoint"/>
-                        <mxPoint x="838" y="110" as="targetPoint"/>
+                        <mxPoint x="620" y="120" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="Obti_GmHwJAL796aEmRM-43" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.636;entryY=1.065;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.676;exitY=-0.025;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Obti_GmHwJAL796aEmRM-15" target="Obti_GmHwJAL796aEmRM-36" edge="1">
@@ -174,13 +162,13 @@
                 <mxCell id="Obti_GmHwJAL796aEmRM-57" value="品切れの商品は&lt;br&gt;[品切れ]と&lt;br&gt;表示させる" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="310" y="110" width="110" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="Web管理システム（顧客接点）: &lt;b&gt;青系&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                <mxCell id="2" value="Web管理システム（顧客接点）: &lt;b&gt;青系&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-370" y="578" width="220" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="注文管理システム（データ処理の中核）: &lt;b&gt;緑系&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                <mxCell id="3" value="注文管理システム（データ処理の中核）: &lt;b&gt;緑系&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-400" y="620" width="270" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="外部連携・物流　赤系" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                <mxCell id="5" value="外部連携・物流　赤系" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-330" y="660" width="140" height="30" as="geometry"/>
                 </mxCell>
             </root>

@@ -1,0 +1,15 @@
+@startuml 商品
+skinparam classAttributeIconSize 0
+
+class 商品 {
+  - 商品ID
+  - 名称
+  - 価格
+  - 在庫数
+  --
+  + 在庫確認()
+  + 価格取得()
+  + 情報表示()
+}
+
+@enduml

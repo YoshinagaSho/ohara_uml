@@ -1,0 +1,13 @@
+@startuml 返金
+skinparam classAttributeIconSize 0
+
+class 返金 {
+  - 返金金額
+  - 返金日
+  - 返金状態（処理中・完了・失敗）
+  --
+  + 返金処理()
+  + 返金確認()
+}
+
+@enduml

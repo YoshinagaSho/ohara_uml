@@ -1,0 +1,17 @@
+@startuml 注文
+skinparam classAttributeIconSize 0
+
+class 注文 {
+  - 注文ID
+  - 顧客ID
+  - 注文日
+  - 状態（出荷済・処理中）
+  --
+  + 商品追加()
+  + 商品削除()
+  + 合計金額計算()
+  + 注文確定()
+  + 注文取消()
+}
+
+@enduml

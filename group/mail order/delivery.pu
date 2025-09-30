@@ -1,0 +1,16 @@
+@startuml 配送
+skinparam classAttributeIconSize 0
+
+class 配送 {
+  - 配送ID
+  - 配送先住所
+  - 配送日
+  - 配送業者
+  - 配送状態（出荷準備中・配送中・配送完了）
+  --
+  + 配送手配()
+  + 状態更新()
+  + 配送状況確認()
+}
+
+@enduml

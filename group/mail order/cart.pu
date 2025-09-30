@@ -1,0 +1,16 @@
+@startuml カート
+skinparam classAttributeIconSize 0
+
+class カート {
+  - 取扱商品
+  - 数量
+  - 合計金額
+  --
+  + 商品追加()
+  + 商品削除()
+  + 数量変更()
+  + 合計金額計算()
+  + 注文に変換()
+}
+
+@enduml

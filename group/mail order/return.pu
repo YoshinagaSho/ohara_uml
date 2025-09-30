@@ -1,0 +1,16 @@
+@startuml 返品
+skinparam classAttributeIconSize 0
+
+class 返品 {
+  - 注文ID
+  - 商品ID
+  - 返品理由
+  - 返品日
+  - 返品状態（申請中・承認済・完了）
+  --
+  + 返品申請()
+  + 返品承認()
+  + 返金処理()
+}
+
+@enduml
