@@ -1,0 +1,47 @@
+@startuml 商品購入ロバストネス図
+skinparam rectangle {
+  BackgroundColor<<boundary>> #DDFFDD
+  BackgroundColor<<control>> #FFFFDD
+  BackgroundColor<<entity>> #FFDDDD
+}
+
+actor 顧客
+
+rectangle "ログイン画面" <<boundary>> as LoginUI
+rectangle "商品検索画面" <<boundary>> as SearchUI
+rectangle "商品一覧画面" <<boundary>> as ListUI
+rectangle "商品詳細画面" <<boundary>> as DetailUI
+rectangle "注文画面" <<boundary>> as OrderUI
+rectangle "決済画面" <<boundary>> as PaymentUI
+rectangle "購入完了画面" <<boundary>> as CompleteUI
+
+rectangle "購入コントローラ" <<control>> as Controller
+
+rectangle "顧客" <<entity>> as Customer
+rectangle "商品" <<entity>> as Product
+rectangle "注文" <<entity>> as Order
+rectangle "決済ログ" <<entity>> as PaymentLog
+
+顧客 -- LoginUI
+LoginUI -- Controller : ログイン要求
+Controller -- Customer : 顧客認証
+
+顧客 -- SearchUI
+SearchUI -- Controller : 商品検索
+Controller -- Product : 商品情報取得
+Controller -- ListUI : 商品一覧表示
+
+顧客 -- ListUI
+ListUI -- DetailUI : 商品選択
+
+DetailUI -- Controller : 注文要求
+Controller -- Order : 注文情報作成
+Controller -- OrderUI : 注文内容表示
+
+OrderUI -- PaymentUI : クレジットカード情報入力
+PaymentUI -- Controller : 決済処理
+Controller -- PaymentLog : 決済記録
+
+Controller -- CompleteUI : 購入完了通知
+
+@enduml
